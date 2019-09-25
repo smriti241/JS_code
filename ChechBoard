@@ -1,0 +1,46 @@
+/**
+ * CheckBoard For 5*5(default)
+ * For Stanford Karel IDE 
+ **/
+function main()
+{
+   putBeeper();
+   checkBoard();
+   moveLeft();  
+   spaceRight();
+   checkBoard();
+   moveLeft();
+   spaceRight();
+   checkBoard();
+}
+
+function checkBoard()
+{
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+}
+
+function moveLeft()
+{
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+}
+
+function spaceRight()
+{   
+   move();
+   move();
+   putBeeper();
+   move();
+   turnRight();
+   move();
+   putBeeper();
+   turnRight();
+}
